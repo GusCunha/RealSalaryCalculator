@@ -51,18 +51,28 @@
                <input type="text" class="form-control" ng-model="salaryController.annualSalary" required placeholder="Annual salary $">
             </div>
             <div class="form-group">
-               <label class="sr-only" for="exampleInputPassword3">RRSP Match %</label>
+               <label class="sr-only" for="exampleInputEmail3">RRSP Match %</label>
                <input type="text" class="form-control" ng-model="salaryController.rrspMatch" required placeholder="RRSP Match %">
             </div>
              <div class="form-group">
-                 <label class="sr-only" for="exampleInputPassword3">Work Hours/Day</label>
+                 <label class="sr-only" for="exampleInputEmail3">Work Hours/Day</label>
                  <input type="text" class="form-control" ng-model="salaryController.workHoursDay" required placeholder="Work Hours/Day">
              </div>
              <div class="form-group">
-                 <label class="sr-only" for="exampleInputPassword3">Vacation Days</label>
+                 <label class="sr-only" for="exampleInputEmail3">Vacation Days</label>
                  <input type="text" class="form-control" ng-model="salaryController.vacationDays" required placeholder="Vacation Days">
              </div>
+			 <div class="form-group">
+                 <label class="sr-only" for="exampleInputEmail3">Bonus</label>
+                 <input type="text" class="form-control" ng-model="salaryController.bonus" required placeholder="Bonus">
+             </div>
+			 <div class="form-group">
+                 <label class="sr-only" for="exampleInputEmail3">Bonus Type %</label>
+                 <input type="text" class="form-control" ng-model="salaryController.bonusType">%
+             </div>
+			 <div>
             <button type="submit" class="btn btn-default">Calculate</button>
+			</div>
          </form>
          <hr>
          <p class="lead" ng-show="salaryController.realSalary > 0">Your real salary is {{ salaryController.realSalary | currency:'$' }}/hour!</p>
