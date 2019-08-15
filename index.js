@@ -4,9 +4,9 @@ angular.module('realSalaryApp', [])
        vm.realSalary = 0;
 
        vm.calculate = function () {
-           var workDays = 52 * 5 - parseInt(vm.vacationDays)
-           var totalSalary = parseInt(vm.annualSalary) * (1 + (parseInt(vm.rrspMatch) / 100)) + parseInt(vm.bonus)
-           vm.realSalary = totalSalary / (workDays * parseInt(vm.workHoursDay))
+           var workDays = 52 * 5 - parseFloat(vm.vacationDays)
+           var totalSalary = parseFloat(vm.annualSalary) * (1 + (parseFloat(vm.rrspMatch) / 100)) + parseFloat(vm.bonus)
+           vm.realSalary = totalSalary / (workDays * parseFloat(vm.workHoursDay))
        };
 
    });
